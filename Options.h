@@ -1,0 +1,85 @@
+/** All option files that belong to the current behavior have to be included by this file. */
+
+#include "Options/Soccer.h"
+
+#include "Options/HeadControl/HeadControl.h"
+
+#include "Options/GameControl/HandleGameState.h"
+#include "Options/GameControl/HandlePenaltyState.h"
+#include "Options/GameControl/PlayingState.h"
+#include "Options/GameControl/ReadyState.h"
+#include "Options/Output/MotionRequest/GetIntoReadyPosition.h"
+
+#include "Options/HeadControl/LookForward.h"
+#include "Options/HeadControl/LookAtLandmark.h"
+#include "Options/HeadControl/LookLeftAndRight.h"
+#include "Options/HeadControl/LookAtBall.h"
+#include "Options/HeadControl/LookAtGlobalBall.h"
+
+#include "Options/Output/MotionRequest/Goalie/GoalieKickAway.h"
+#include "Options/Output/MotionRequest/Goalie/goalieFastDiveLeft.h"
+#include "Options/Output/MotionRequest/Goalie/goalieFastDiveRight.h"
+#include "Options/Output/MotionRequest/StopBall.h"
+
+#include "Options/Output/Activity.h"
+#include "Options/Output/Annotation.h"
+#include "Options/Output/HeadMotionRequest/SetHeadPanTilt.h"
+#include "Options/Output/MotionRequest/InWalkKick.h"
+#include "Options/Output/MotionRequest/KickToTarget.h"
+#include "Options/Output/MotionRequest/PassToTarget.h"
+#include "Options/Output/MotionRequest/Move.h"
+#include "Options/Output/MotionRequest/MoveWithBall.h"
+#include "Options/Output/MotionRequest/Turn.h"
+#include "Options/Output/MotionRequest/Kicks.h"
+#include "Options/Output/MotionRequest/SpecialAction.h"
+#include "Options/Output/MotionRequest/Stand.h"
+#include "Options/Output/MotionRequest/WalkAtAbsoluteSpeed.h"
+#include "Options/Output/MotionRequest/WalkAtRelativeSpeed.h"
+#include "Options/Output/MotionRequest/WalkToTarget.h"
+#include "Options/Output/MotionRequest/WalkToTargetPathPlanner.h"
+#include "Options/Output/MotionRequest/SPQRWalkTo.h"
+#include "Options/Output/MotionRequest/GetUpEngine.h"
+#include "Options/Output/MotionRequest/GoAndInWalk.h"
+#include "Options/Output/MotionRequest/GoAndKick.h"
+#include "Options/Roles/checkStriker.h"
+//#include "Options/Roles/MyStriker.h"
+
+#include "Options/Output/PlaySound.h"
+#include "Options/Roles/Striker.h"
+#include "Options/Roles/StrikerDemo.h"
+#include "Options/Roles/StrikerDev.h"
+#include "Options/Roles/PenaltyStriker.h"
+
+#include "Options/Output/MotionRequest/Approacher.h"
+#include "Options/Output/MotionRequest/PenaltyApproacher.h"
+#include "Options/Output/MotionRequest/PenaltyPreApproacher.h"
+#include "Options/Output/MotionRequest/Stopper.h"
+
+
+#include "Options/Roles/FastStriker.h"
+#include "Options/Output/MotionRequest/SearchBallHead.h"
+#include "Options/Output/MotionRequest/Esorcista.h"
+#include "Options/Roles/PlanJolly.h"
+#include "Options/Roles/StaticJolly.h"
+#include "Options/Roles/PlanStriker.h"
+#include "Options/Roles/SimpleJolly.h"
+
+#include "Options/Roles/Defender.h"
+#include "Options/Roles/Supporter.h"
+#include "Options/Roles/Jolly.h"
+#include "Options/Roles/Goalie.h"
+#include "Options/Roles/Searcher.h"
+#include "Options/Roles/Guard.h"
+#include "Options/Skills/GetUp.h"
+
+#include "Options/Roles/SanniPlaying/SanniRole.h"
+#include "Options/Roles/SanniPlaying/SanniMoveAroundBall.h"
+#include "Options/Roles/SanniPlaying/SanniStriker.h"
+#include "Options/Roles/SanniPlaying/SanniGoalie.h"
+#include "Options/Roles/SanniPlaying/SanniDisregard.h"
+
+
+#include "Options/DemoOptions/Demo.h"
+#include "Options/DemoOptions/Waving.h"
+
+#include "Options/Tools/ButtonPressedAndReleased.h"
